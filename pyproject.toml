@@ -1,0 +1,20 @@
+[project]
+name = "datasci207-project"
+version = "0.1.0"
+description = "Predicting NFL fourth-down conversion probability"
+readme = "README.md"
+requires-python = ">=3.12,<3.13"
+dependencies = [
+    "jupyterlab",
+    "keras",
+    "matplotlib",
+    "nflreadpy",
+    "numpy",
+    "pandas",
+    "scikit-learn",
+    "seaborn",
+    "tensorflow",
+]
+
+[tool.uv]
+package = false
