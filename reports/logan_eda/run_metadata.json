@@ -1,0 +1,37 @@
+{
+  "downloaded_utc": "2026-10-12T02:04:44.317934+00:00",
+  "seasons": [
+    2015,
+    2016,
+    2017,
+    2018,
+    2019,
+    2020,
+    2021,
+    2022,
+    2023,
+    2024,
+    2025
+  ],
+  "source": "nflverse via nflreadpy",
+  "executed_utc": "2026-10-12T23:29:28.960893+00:00",
+  "python": "3.12.14",
+  "packages": {
+    "pandas": "3.0.6",
+    "numpy": "2.5.4",
+    "matplotlib": "3.11.2",
+    "nflreadpy": "0.1.5",
+    "pyarrow": "26.0.0"
+  },
+  "split_status": "proposed; pending team agreement",
+  "eda_seasons": [
+    2015,
+    2016,
+    2017,
+    2018,
+    2019,
+    2020,
+    2021,
+    2022
+  ]
+}
