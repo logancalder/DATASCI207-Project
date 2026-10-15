@@ -56,3 +56,11 @@ Categorical encoding, missing-value handling, and model training come later. Fit
 Field definitions: [nflverse play-by-play dictionary](https://nflreadr.nflverse.com/articles/dictionary_pbp.html).
 
 Work in progress.
+
+## Logan's EDA
+
+`notebooks/02_logan_eda.ipynb` is owned by Logan Calder. It reuses the shared data pipeline, audits filtering and training-feature quality, and exports four labeled figures plus summary tables and milestone evidence to `reports/logan_eda/`.
+
+Run all cells in order from the project root or `notebooks/` using the project environment. Cells have explicit numbering beginning at 1. The first run downloads 2015–2025 play-by-play data and caches it under the ignored `data/logan_eda/` folder. The cache metadata records the source download time; remove the cached parquet explicitly if a fresh source snapshot is desired.
+
+The notebook proposes training on 2015–2022, validating on 2023, and testing on 2024–2025, pending team agreement. Feature/target exploration uses only the proposed training partition. The exported `run_metadata.json` records the package versions used for the saved results. No model has been fitted in this notebook.
