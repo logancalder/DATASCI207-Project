@@ -149,6 +149,14 @@ def process_4th_down_data(raw_data: pd.DataFrame) -> pd.DataFrame:
         situation["posteam_timeouts_remaining"] - situation["defteam_timeouts_remaining"]
     )
 
+    # Cleaning surfaces so "grass" does not appear twice
+    processed["surface"] = (
+    processed["surface"]
+    .astype("string")
+    .str.strip()
+    .replace("", pd.NA)
+    )
+
     return processed.reset_index(drop=True)
 
 
@@ -219,3 +227,22 @@ def make_preprocessor(*, scale_numeric: bool = True) -> ColumnTransformer:
         ]), BINARY_COLUMNS),
         ("categorical", categorical, CATEGORICAL_COLUMNS),
     ], remainder="drop").set_output(transform="pandas")
+
+
+def split_data_chronological(
+    data: pd.DataFrame,
+) -> tuple[pd.DataFrame, pd.DataFrame, pd.DataFrame]:
+    """Split fourth-down plays chronologically by NFL season.
+
+    Training: 2015–2022
+    Validation: 2023
+    Test: 2024–2025
+
+    Returns (train, test, validation), matching split_data().
+    """
+    train = data[data["season"].between(2015, 2022)].copy()
+    validation = data[data["season"] == 2023].copy()
+    test = data[data["season"].between(2024, 2025)].copy()
+
+    return train, test, validation
+
