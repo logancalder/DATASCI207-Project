@@ -1,0 +1,3 @@
+model,logloss_improvement_vs_baseline,ci_low,ci_high
+Gradient boosting,-0.001,-0.0085,0.0066
+Feedforward NN,0.0026,-0.0012,0.0064
