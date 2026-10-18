@@ -1,5 +1,5 @@
-model,log_loss,brier,ece,roc_auc
-Base rate,0.6924,0.2496,0.0005,0.5
-Baseline,0.6226,0.2174,0.0372,0.6945
-Gradient boosting,0.6236,0.2173,0.0308,0.7026
-Feedforward NN,0.62,0.2159,0.0362,0.7048
+model,log_loss,brier,ece,cal_slope,roc_auc
+Base rate,0.6924,0.2496,0.0005,,0.5
+Baseline (reference LR),0.6226,0.2174,0.0372,1.4846,0.6945
+Gradient boosting,0.6267,0.2186,0.0331,1.2601,0.6965
+Feedforward NN,0.62,0.2159,0.0362,1.5145,0.7048
