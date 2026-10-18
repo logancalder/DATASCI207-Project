@@ -1,0 +1,37 @@
+{
+  "split_counts": {
+    "train": 4887,
+    "validation": 823,
+    "test_untouched": 1723
+  },
+  "features": [
+    "ydstogo",
+    "yardline_100",
+    "qtr",
+    "game_seconds_remaining",
+    "score_differential"
+  ],
+  "use_teams": false,
+  "gbm_best_params": {
+    "clf__l2_regularization": 0.031766024541631466,
+    "clf__learning_rate": 0.009541255237448988,
+    "clf__max_iter": 713.0,
+    "clf__max_leaf_nodes": 23.0,
+    "clf__min_samples_leaf": 374.0
+  },
+  "ffnn_best_config": {
+    "layers": 1.0,
+    "units": 32.0,
+    "dropout": 0.1295784002563289,
+    "l2": 0.00021394044754053816,
+    "lr": 0.0014006771537589354,
+    "cv_log_loss": 0.6504038870334625,
+    "cv_std": 0.005364732128044076,
+    "median_epochs": 12.0,
+    "fold_2019": 0.6591314673423767,
+    "fold_2020": 0.6449584364891052,
+    "fold_2021": 0.6473643183708191,
+    "fold_2022": 0.6501613259315491
+  },
+  "baseline_source": "reference logistic regression (placeholder until Emily's export exists)"
+}

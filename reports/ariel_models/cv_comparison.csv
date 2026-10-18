@@ -1,0 +1,6 @@
+,Logistic regression,Gradient boosting (best),Feedforward NN (best)
+holdout 2019,0.6622,0.6635,0.6591
+holdout 2020,0.6461,0.6498,0.645
+holdout 2021,0.6511,0.6429,0.6474
+holdout 2022,0.6495,0.6488,0.6502
+mean,0.6522,0.6513,0.6504

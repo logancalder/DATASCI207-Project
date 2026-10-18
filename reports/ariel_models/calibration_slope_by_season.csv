@@ -1,0 +1,6 @@
+holdout,plays,slope,ci_low,ci_high,excludes_1
+2019,612,0.87,0.6,1.23,False
+2020,677,1.02,0.75,1.35,False
+2021,805,0.98,0.67,1.32,False
+2022,762,1.07,0.79,1.4,False
+2023 (validation),823,1.48,1.17,1.79,True
